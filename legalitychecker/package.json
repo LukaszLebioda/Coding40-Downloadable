@@ -1,0 +1,14 @@
+{
+  "name": "legalitychecker",
+  "version": "1.0.1",
+  "description": "A program to tell what is legal (or not) in some countries",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "legality"
+  ],
+  "author": "Coding40 - Łukasz Lebioda",
+  "license": "ISC"
+}

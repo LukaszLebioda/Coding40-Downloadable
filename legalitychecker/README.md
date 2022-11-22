@@ -1,0 +1,1 @@
+This is just a simple program I wrote for practise. It tells what is legal (or not) in some countries. Feel free to rwx it!
