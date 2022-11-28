@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="description" content="A simple program to count how much each member of a trip should pay for fuel">
+	<meta name="keywords" content="coding, self-study, lifechange">
+    <meta name="author" content="Coding40 - Łukasz Lebioda"> 
+	<title>Fuel counter</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> 
+    
+    <link rel="icon" href="img/logo/logoSemiTransparentLarge.png">   
+	<link rel="stylesheet" href="css/myStyle.css">
+    <link rel="stylesheet" href="css/fontello/css/fontello.css">   
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+</head>
+   
+<body>
+
+
+<main>
+    
+        <div class="container"> 
+        
+               	<div class="container g-0">
+               				
+                <div class="accordion accordion-flush" id="accordionExample">
+                     
+                      <div class="accordion-item mt-2 border border-dark">
+                            <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                              Program 2 - Fuel counter
+                            </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                            <h1 class="h3 fw-normal mb-4 regular">FUEL COUNTER</h1>
+                           
+                            <p class="myTextJustify regular">
+                            <b>Scenario</b>: You and Your friends go on a voyage with Your car. Hardly were You able to agree one specific weekend when You all have some free time and now You can go! You don't want to end up like a bunch of math students however, waving around with sheets of paper and pencils on a parking lot in the middle of nowhere, arguing how much each of You should pay for fuel. <br>
+                                <b>How is this useful:</b> Basing upon provided data the program will count how much each member of the expedition should share for fuel. <br> <b>Explanation:</b> Prices of petrol change rapidly. You might want to use this program before the trip, as well as after, just to compare...<br><b>Source code:</b> This is a second program I wrote in Java Script. Nothing fancy actually, but quite useful I think. I feel there are to many restrictions as far as user's input data is concerned, however this is something I'll improve in the upcoming programs hopefully. Download this app from my <a href="https://github.com/LukaszLebioda/Coding40-DownloadableContent" target="_blank">GitHub repository</a> or just hit <i>npm i fuelcounter</i> in Your terminal. 
+                            </p>
+                           
+                            <form>
+                            
+                                <fieldset class="form-group border p-3 mb-4">
+                                    <legend class="w-auto px-2 mb-4"></legend>
+                                        <div class="form-group mb-4">
+                                            <label for=""><h4>What is the total distance of Your journey?</h4><p class="regular mb-1">(km only)</p></label> <br><br>
+                                            <input type="number" style="width: 120px; height:37px; font-size:23px; text-align:center" class="" id="routeGasoline">
+                                        </div>
+                                        
+                                </fieldset>
+                                
+                                <fieldset class="form-group border p-3 mb-4">
+                                  <legend class="w-auto px-2 mb-4"></legend>
+                                      <div class="form-group mb-4">
+                                          <label for=""><h4>How much is fuel per one cubical?</h4><p class="regular mb-1">(e.g. EUR / litr)</p></label> <br><br>
+                                          <input type="number" style="width: 120px; height:37px; font-size:23px; text-align:center" class="" id="priceGasoline">
+                                      </div>
+                                      
+                              </fieldset>
+
+                              <fieldset class="form-group border p-3 mb-4">
+                                <legend class="w-auto px-2 mb-4"></legend>
+                                    <div class="form-group mb-4">
+                                        <label for=""><h4>How big is Your car's average fuel consumption?</h4><p class="regular mb-1">(per 100km)</p></label> <br><br>
+                                        <input type="number" style="width: 120px; height:37px; font-size:23px; text-align:center" class="" id="averageConsumptionGasoline">
+                                    </div>
+                                    
+                            </fieldset>
+
+                            <fieldset class="form-group border p-3 mb-4">
+                              <legend class="w-auto px-2 mb-4"></legend>
+                                  <div class="form-group mb-4">
+                                      <label for=""><h4>How many persons there are in Your car (Yourself included)</h4><p class="regular mb-1">(one-digit non decimal format preferable)</p></label> <br><br>
+                                      <input type="number" style="width: 120px; height:37px; font-size:23px; text-align:center" class="" id="personsGasoline">
+                                  </div>
+                                  
+                          </fieldset>
+
+                                <div class="form-group row text-right">
+                                    <div class="col">
+                                        <button type="button" id="buttonGasoline" class="btn bg-button my-4">Git push</button>
+                                    </div>
+                                </div>
+                            </form>         
+                             
+                            <fieldset class="form-group border pt-4 mb-4">
+                                <legend class="w-auto px-2 mb-4"></legend>
+                                    <div class="form-group mb-5">
+                                      <label><h2>Provided data:</h2></label>
+                                        <h4>Distance: <span id="providedRoute" style="color: blue"></span></h4>
+                                        <h4>Fuel price: <span id="providedPrice" style="color: blue"></span></h4>
+                                        <h4>Average cons.: <span id="providedAverageConsumption" style="color: blue"></span></h4>
+                                        <h4>No. of persons: <span id="providedPersonsNumber" style="color: blue"></span></h4>
+                                    </div>
+                            </fieldset>
+                              
+                            <fieldset class="form-group border p-3 mb-4 bg-fieldset">
+                                <h2>Result:</h2>      
+                                <h4><span id="resultGasoline" style="color: blue"></span></h4>
+                            </fieldset>
+                          </div>
+                        </div>
+                   
+                      </div>
+            </div>   
+               
+                </div> <!-- end of CONTAINER -->             
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>  
+     
+    <script src="./fuelCounter.js"></script>   
+</body>
+    
+</html>
+    

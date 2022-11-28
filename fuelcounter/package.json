@@ -1,0 +1,16 @@
+{
+  "name": "fuelcounter",
+  "version": "1.0.0",
+  "description": "a program to count how much each member of a trip should pay for fuel",
+  "main": "fuelCounter.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "fuel",
+    "trip",
+    "car"
+  ],
+  "author": "Łukasz Lebioda",
+  "license": "ISC"
+}
