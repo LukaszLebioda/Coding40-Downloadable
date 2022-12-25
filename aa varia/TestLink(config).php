@@ -1,4 +1,5 @@
 https://www.youtube.com/watch?v=f9q65Qov9hI&t=689s
+https://www.guru99.com/testlink-tutorial-complete-guide.html
 
 1. Download testlink_1_9_20_fixed from GitHub.
 
@@ -32,13 +33,38 @@ if (($upa = getenv('TESTLINK_UPLOAD_AREA'))) {
 	
 7. 	Localhost/testlink: login to application (admin / admin).
 
-	Create new project: Name, e.g. Test Project.
-	Prefix: e.g. TP.
-	Description: optional.
+8. 	Test Project Management. 
+	Create (create a new project).
+	Name (e.g. Bonito online bookstore)
+	Prefix (e.g. BO).
+	Description (e.g.: A test to validate the Bonito online bookstore searchbox and cart behaviour / functionality).
 	Create.
 	
-	Test Plan Management.
+9.  Test Plan Management (example info: scope of software testing, milestone, test suites, test cases).  
 	Create.
-	Name: e.g.Testplan.
-	Description: optional.
-	Active, Public - both checkboxes checked!
+	Name (e.g. Bonito TestPlan).
+	Description (e.g. A test plan for Bonito online store application).
+	Create.
+	Active.
+	Public.
+	
+10. Builds / Releases.
+	Create.
+	Title (e.g. Bonito online bookstore sample build).
+	Description (e.g. This is a sample build for Bonito online bookstore application).
+	Active.
+	Open. 
+	Release date.
+	Create.
+	
+11. Test Specification (creates a test suite - a collection of test cases to test the same component).
+	Settings icon click.
+	Plus icon click (create tab).
+	Test suite name (e.g. Bonito online bookstore searchbox).
+	Details (e.g. The test suite contains test cases related to test Bonito online bookstore searchbox funcionality).
+	Save.
+	
+12. Create a test case (a sequence of test steps to test a specific scenario with an expected result).
+	After having created a test suites, they appear in the folder tree structure under the Test Specification Panel.
+	Settings icon click ("Actions").
+	PLus icon click ("Create") (nest to: "Test Case Operations").
