@@ -1,5 +1,6 @@
-https://www.youtube.com/watch?v=f9q65Qov9hI&t=689s
-https://www.guru99.com/testlink-tutorial-complete-guide.html
+https://www.youtube.com/watch?v=f9q65Qov9hI&t=689s // INSTALACJA
+https://www.youtube.com/watch?v=yWUinQtU9hM // PRZYPADKI TESTOWE
+https://www.guru99.com/testlink-tutorial-complete-guide.html // TESTLINK TUTORIAL
 
 1. Download testlink_1_9_20_fixed from GitHub.
 
@@ -67,4 +68,13 @@ if (($upa = getenv('TESTLINK_UPLOAD_AREA'))) {
 12. Create a test case (a sequence of test steps to test a specific scenario with an expected result).
 	After having created a test suites, they appear in the folder tree structure under the Test Specification Panel.
 	Settings icon click ("Actions").
-	PLus icon click ("Create") (nest to: "Test Case Operations").
+	Plus icon click ("Create") (next to: "Test Case Operations").
+	Test Case Title (e.g.: "Loading the page; searchbox visibvle).
+	Preconditions: optional (.e.g. 1. The user should be connected to the Internet. 2. The user should have valid user id and password). 
+	Summary: optional (e.g. The test case to check the Bonito online store searchbox funcionality).
+	Create.
+	
+13. Create Test Step.
+	Step actions + Expected results.
+	Save.
+	
