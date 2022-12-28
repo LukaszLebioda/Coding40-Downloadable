@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<testcases>
+<testcase internalid="12" name="Bonito online bookstore searchbox">
+	<node_order><![CDATA[1002]]></node_order>
+	<externalid><![CDATA[3]]></externalid>
+	<version><![CDATA[2]]></version>
+	<summary><![CDATA[<p>The test case to check the Bonito online store searchbox funcionality</p>
+]]></summary>
+	<preconditions><![CDATA[<p>The user should be connected to the Internet.</p>
+]]></preconditions>
+	<execution_type><![CDATA[1]]></execution_type>
+	<importance><![CDATA[2]]></importance>
+	<estimated_exec_duration></estimated_exec_duration>
+	<status>1</status>
+	<is_open>1</is_open>
+	<active>1</active>
+<steps>
+<step>
+	<step_number><![CDATA[1]]></step_number>
+	<actions><![CDATA[<p>Loading Bonito online bookstore website.</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>Website loaded.</li>
+	<li>Searchbox visible.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[2]]></step_number>
+	<actions><![CDATA[<p>Clicking magnifying glass icon without having typed anything into searchbox&nbsp;yet.</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>Website reloaded (optional).</li>
+	<li>Website not redirected anywhere.&nbsp;</li>
+	<li>No search results provided.</li>
+	<li>Any info about empty searchbox provided to the User.&nbsp;</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[3]]></step_number>
+	<actions><![CDATA[<p>Typing author&#39;s name (e.g. Grisham) into searchbox.</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>Result hints&nbsp;appear (e.w. pop up window, dropdown list).&nbsp;</li>
+	<li>One result hint equals&nbsp;one&nbsp;book title with author&#39;s name.</li>
+	<li>A link / button to see all the results exists (e.g. &quot;See all&quot;).</li>
+	<li>Searched phrase (e.g. &quot;Grisham&quot;) still visible in the searchbox.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[4]]></step_number>
+	<actions><![CDATA[<p>Clicking the button / link (e.g. See all) to redirect to the subpage with all the results.&nbsp;</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>Subpage with all the results loaded.</li>
+	<li>Info (header) about searched phrase provided (in this case: &quot;Grisham)&quot;.</li>
+	<li>Search results visible (book covers, images, author&#39;s names, book prices, info about availability, add to cart button).</li>
+	<li>Pagination visible and active.</li>
+</ol>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+
+<step>
+	<step_number><![CDATA[5]]></step_number>
+	<actions><![CDATA[<p>Typing a random string (e.g. sdfgfghgfhsdfg) into searchbox.</p>
+]]></actions>
+	<expectedresults><![CDATA[<ol>
+	<li>Info (header) about searched phrase provided (in this case: &quot;sdfgfghgfhsdfg&quot;).</li>
+	<li>Info (e.g. &quot;no results&quot; / &quot;0 results&quot;)&nbsp;provided.</li>
+</ol>
+
+<p>&nbsp;</p>
+]]></expectedresults>
+	<execution_type><![CDATA[1]]></execution_type>
+</step>
+</steps>
+<platforms/>
+
+</testcase>
+</testcases>

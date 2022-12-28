@@ -52,7 +52,7 @@ if (($upa = getenv('TESTLINK_UPLOAD_AREA'))) {
 10. Builds / Releases.
 	Create.
 	Title (e.g. Bonito online bookstore sample build).
-	Description (e.g. This is a sample build for Bonito online bookstore application).
+	Description (e.g. Bonito online bookstore sample build).
 	Active.
 	Open. 
 	Release date.
@@ -77,4 +77,31 @@ if (($upa = getenv('TESTLINK_UPLOAD_AREA'))) {
 13. Create Test Step.
 	Step actions + Expected results.
 	Save.
+	
+14. Adding test cases to Test Plan.
+	Home page.
+	Add / Remove test cases.
+	Assign to user on add {e.g. admin} / on build {e.g. v. 1.01}.
+	Select test case.
+	Add selected (it will be highlighted in yellow).
+	
+15. Executing tests.
+	Execute icon on main home page panel.
+	On the tree (left bottom corner) select a test case to be executed.
+	Select: Passed, Failed, Blicked.
+	Execution notes.
+	Mark the tester and estimated test duration.
+	
+16. Reporting.
+	Navigation bar: Test Reports.
+	Leftside panel: Test Report. 
+	Check / uncheck what is necessary.
+	Below, the folder tree: Click on Project Folder.
+	
+17. Importing / Exporting.
+	We can export/import test projects and test suites.
+	Test specification - choose the test case You want to export.
+	Right panel, Settings Icon click: Export.
+	Select checkboxes. Export. A file.xml is generated.
+	
 	
